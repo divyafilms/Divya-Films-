@@ -1,0 +1,284 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Client Gallery Dashboard — Divya Films | Rahul &amp; Priya</title>
+<meta name="description" content="Private client dashboard for Rahul & Priya. Access your wedding photos, 4K cinema films, album layout proof, and production status.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+<!-- ============ HEADER & NAVIGATION (ROYAL GOLD DESIGN) ============ -->
+<header class="navbar luxury-navbar">
+  <div class="navbar-flare"></div>
+  <div class="navbar-container">
+    
+    <!-- Left Wing Accent -->
+    <div class="nav-wing nav-wing-left"></div>
+
+    <!-- Brand Logo Section -->
+    <a href="index.html" class="nav-brand">
+      <div class="brand-emblem-wrap">
+        <img src="images/logo-emblem.png" alt="Divya Films Royal Crown Logo" class="brand-emblem-img">
+      </div>
+      <div class="brand-divider"></div>
+      <div class="brand-meta">
+        <span class="brand-title">Divya Films</span>
+        <span class="brand-subtitle">PHOTOGRAPHY &amp; CINEMATOGRAPHY</span>
+        <span class="brand-tagline">LUXURY &bull; EMOTIONS &bull; FOREVER</span>
+      </div>
+    </a>
+
+    <!-- Center Nav Links with Vertical Icon + Label -->
+    <nav class="luxury-nav-menu">
+      <a href="index.html" class="luxury-nav-item" data-nav-link>
+        <i class="fa-solid fa-house"></i>
+        <span>Home</span>
+      </a>
+      <a href="about.html" class="luxury-nav-item" data-nav-link>
+        <i class="fa-regular fa-user"></i>
+        <span>About</span>
+      </a>
+      <a href="services.html" class="luxury-nav-item" data-nav-link>
+        <i class="fa-solid fa-gear"></i>
+        <span>Services</span>
+      </a>
+      <a href="portfolio.html" class="luxury-nav-item" data-nav-link>
+        <i class="fa-regular fa-image"></i>
+        <span>Portfolio</span>
+      </a>
+      <a href="packages.html" class="luxury-nav-item" data-nav-link>
+        <i class="fa-regular fa-circle-play"></i>
+        <span>Packages</span>
+      </a>
+      <a href="albums.html" class="luxury-nav-item" data-nav-link>
+        <i class="fa-solid fa-film"></i>
+        <span>Albums</span>
+      </a>
+      <a href="reviews.html" class="luxury-nav-item" data-nav-link>
+        <i class="fa-regular fa-star"></i>
+        <span>Reviews</span>
+      </a>
+      <a href="blog.html" class="luxury-nav-item" data-nav-link>
+        <i class="fa-regular fa-file-lines"></i>
+        <span>Blog</span>
+      </a>
+      <a href="contact.html" class="luxury-nav-item" data-nav-link>
+        <i class="fa-regular fa-envelope"></i>
+        <span>Contact</span>
+      </a>
+      <a href="films.html" class="luxury-nav-item" data-nav-link>
+        <i class="fa-regular fa-images"></i>
+        <span>Gallery</span>
+      </a>
+    </nav>
+
+    <!-- Right Side (Mini Top Bar + Action Buttons) -->
+    <div class="nav-action-zone">
+      <!-- Upper Strip: Phone + Social Icons -->
+      <div class="nav-mini-strip">
+        <a href="https://wa.me/917209898221" target="_blank" rel="noopener" class="strip-phone">
+          <i class="fa-brands fa-whatsapp"></i>
+          <span>7209898221</span>
+        </a>
+        <span class="strip-pipe">|</span>
+        <div class="strip-socials">
+          <a href="https://www.instagram.com/divya_films_1/" target="_blank" rel="noopener" title="Instagram @divya_films_1"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://wa.me/917209898221" target="_blank" rel="noopener" title="WhatsApp Us"><i class="fa-brands fa-whatsapp"></i></a>
+          <a href="mailto:divyafilmsmirganj@gmail.com" title="Email Us"><i class="fa-regular fa-envelope"></i></a>
+          <a href="index.html" title="Official Website"><i class="fa-solid fa-globe"></i></a>
+        </div>
+      </div>
+
+      <!-- Lower Row: Client Gallery Active + Logout Pill -->
+      <div class="nav-action-row">
+        <div class="nav-action-divider"></div>
+        <span class="nav-client-link" style="color:var(--gold-light);cursor:default;">
+          <i class="fa-solid fa-crown" style="color:#ffe082;"></i>
+          <span class="client-label" style="color:#ffe082;font-weight:700;">Client Portal<br><small id="clientNavId" style="color:var(--gold-light);">DF-2026</small></span>
+        </span>
+        <button id="clientLogoutBtn" class="nav-pill-btn" style="background:transparent;border:1px solid rgba(212,175,55,0.6);color:#f7df8b !important;cursor:pointer;">
+          <i class="fa-solid fa-right-from-bracket"></i>
+          <span>Logout</span>
+        </button>
+        <button class="hamburger luxury-hamburger" data-open-drawer aria-label="Open mobile menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Right Wing Accent -->
+    <div class="nav-wing nav-wing-right"></div>
+
+  </div>
+</header>
+
+<!-- ============ MOBILE DRAWER ============ -->
+<div class="drawer-overlay" data-close-drawer></div>
+<aside class="mobile-drawer">
+  <div class="drawer-top">
+    <span class="logo">
+      <span class="logo-mark"><img src="images/logo-emblem.png" alt="Logo" style="width:36px;height:36px;border-radius:50%;"></span>
+      <span class="logo-text"><strong>Divya Films</strong><span>Navigation</span></span>
+    </span>
+    <button class="drawer-close" data-close-drawer aria-label="Close menu"><i class="fa-solid fa-xmark"></i></button>
+  </div>
+  <nav class="drawer-links">
+    <a href="index.html"><i class="fa-solid fa-house"></i> Home <i class="fa-solid fa-chevron-right"></i></a>
+    <a href="about.html"><i class="fa-regular fa-user"></i> About Studio <i class="fa-solid fa-chevron-right"></i></a>
+    <a href="services.html"><i class="fa-solid fa-gear"></i> Our Services <i class="fa-solid fa-chevron-right"></i></a>
+    <a href="portfolio.html"><i class="fa-regular fa-image"></i> Photo Portfolio <i class="fa-solid fa-chevron-right"></i></a>
+    <a href="packages.html"><i class="fa-regular fa-circle-play"></i> Wedding Packages <i class="fa-solid fa-chevron-right"></i></a>
+    <a href="films.html"><i class="fa-regular fa-images"></i> Cinema &amp; Gallery <i class="fa-solid fa-chevron-right"></i></a>
+    <a href="albums.html"><i class="fa-solid fa-film"></i> Luxury Albums <i class="fa-solid fa-chevron-right"></i></a>
+    <a href="reviews.html"><i class="fa-regular fa-star"></i> Client Reviews <i class="fa-solid fa-chevron-right"></i></a>
+    <a href="blog.html"><i class="fa-regular fa-file-lines"></i> Wedding Journal <i class="fa-solid fa-chevron-right"></i></a>
+    <a href="contact.html"><i class="fa-regular fa-envelope"></i> Contact Us <i class="fa-solid fa-chevron-right"></i></a>
+    <a href="login.html" class="gold"><i class="fa-solid fa-right-from-bracket"></i> Logout Portal <i class="fa-solid fa-arrow-right"></i></a>
+  </nav>
+  <a href="booking.html" class="btn btn-gold btn-block drawer-cta"><i class="fa-regular fa-calendar-check"></i> Check Date Availability</a>
+</aside>
+
+<main class="dash-body">
+  <div class="container">
+
+    <!-- Welcome Header -->
+    <div class="dash-welcome">
+      <div>
+        <span class="section-badge" style="margin-bottom:8px;" id="clientWelcomeBadge"><i class="fa-solid fa-crown"></i> Royal Client</span>
+        <h1 id="clientWelcomeName">Welcome, Client</h1>
+        <p class="muted" id="clientBookingIdText">Booking ID: <strong>DF-2026</strong> · Assigned Lead: Aditya Kumar</p>
+      </div>
+      <div style="display:flex;gap:10px;align-items:center;flex-wrap:wrap;">
+        <span class="badge badge-confirmed" id="clientStatusBadge"><i class="fa-solid fa-check"></i> Shoot Completed</span>
+        <a href="https://wa.me/917209898221" target="_blank" rel="noopener" class="btn btn-whatsapp btn-sm" id="clientChatAdityaBtn">
+          <i class="fa-brands fa-whatsapp"></i> Chat with Aditya
+        </a>
+      </div>
+    </div>
+
+    <!-- Production Progress Tracker -->
+    <div class="card" style="margin-bottom:34px;padding:32px 24px;border:1px solid var(--border-strong);">
+      <h3 style="font-size:1.15rem;margin-bottom:6px;"><i class="fa-solid fa-bars-progress gold" style="margin-right:8px;"></i> Production Milestone Status</h3>
+      <p class="muted" style="font-size:0.84rem;margin-bottom:22px;">Live progress tracking of your wedding deliverables</p>
+
+      <div class="progress-tracker" id="clientProgressTracker">
+        <!-- Dynamically rendered based on client.productionStep -->
+      </div>
+    </div>
+
+    <!-- Details Grid -->
+    <div class="dash-grid">
+      <!-- Event Information -->
+      <div class="card">
+        <h3 style="margin-bottom:18px;"><i class="fa-solid fa-ring gold" style="margin-right:8px;"></i> Event &amp; Booking Details</h3>
+        <div class="info-row"><span>Event Celebration</span><b id="clientEventCelebration">Royal Wedding &amp; Varmala</b></div>
+        <div class="info-row"><span>Wedding Date</span><b id="clientEventDate">20 November 2026</b></div>
+        <div class="info-row"><span>Venue &amp; City</span><b id="clientEventVenue">Hotel Maurya, Patna, Bihar</b></div>
+        <div class="info-row"><span>Selected Package</span><b id="clientPackageName">Royal Gold Experience (₹55,000)</b></div>
+        <div class="info-row"><span>Crew Assigned</span><b>Aditya Kumar + Master Cinematographers + 5.1K Drone</b></div>
+        <div class="info-row"><span>Album Selected</span><b id="clientAlbumSelected">Handcrafted Royal Leather (12x24, 40 Pages)</b></div>
+      </div>
+
+      <!-- Payment Summary -->
+      <div class="card">
+        <h3 style="margin-bottom:18px;"><i class="fa-solid fa-credit-card gold" style="margin-right:8px;"></i> Payment &amp; Invoice Status</h3>
+        <div class="info-row"><span>Total Package Value</span><b id="clientTotalValue">₹55,000</b></div>
+        <div class="info-row"><span>Booking Advance Received</span><b id="clientPaidValue" style="color:#4ee08b;">₹40,000 (Paid)</b></div>
+        <div class="info-row total"><span>Remaining Balance</span><b id="clientBalanceValue" class="gold">₹15,000</b></div>
+        
+        <div style="display:flex;gap:12px;margin-top:24px;flex-wrap:wrap;">
+          <button type="button" class="btn btn-outline btn-block" onclick="showToast('Downloading official GST Tax Invoice PDF...');">
+            <i class="fa-solid fa-file-invoice"></i> Download Invoice Receipt
+          </button>
+          <a id="clientPayUpiBtn" href="https://wa.me/917209898221?text=Namaste%20Aditya%20ji!%20I%20want%20to%20clear%20my%20balance%20payment." target="_blank" rel="noopener" class="btn btn-gold btn-block">
+            <i class="fa-solid fa-qrcode"></i> Pay via UPI / QR Code
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Quick Access Media Tiles -->
+    <h3 style="margin:40px 0 20px;"><i class="fa-solid fa-folder-open gold" style="margin-right:8px;"></i> Your Private Deliverables Library</h3>
+    <div class="tiles">
+      <div class="tile">
+        <i class="fa-brands fa-google-drive"></i>
+        <div class="num" id="clientTotalPhotosNum">600+</div>
+        <div class="label">4K High-Res Photos Drive</div>
+        <a id="clientDriveLinkBtn" href="https://drive.google.com/" target="_blank" rel="noopener" class="btn btn-gold btn-sm" style="margin-top:14px;width:100%;text-decoration:none;">
+          <i class="fa-solid fa-arrow-up-right-from-square"></i> Open Drive
+        </a>
+      </div>
+
+      <div class="tile">
+        <i class="fa-solid fa-film"></i>
+        <div class="num">4K</div>
+        <div class="label">Cinematic Film &amp; Reel</div>
+        <a id="clientTeaserLinkBtn" href="https://www.instagram.com/divya_films_1/reel/DfC0_ZaygK2/" target="_blank" rel="noopener" class="btn btn-outline btn-sm" style="margin-top:14px;width:100%;text-decoration:none;">
+          <i class="fa-solid fa-play"></i> Watch Film
+        </a>
+      </div>
+
+      <div class="tile">
+        <i class="fa-solid fa-book-open"></i>
+        <div class="num">180°</div>
+        <div class="label">Album Proof Status</div>
+        <button type="button" class="btn btn-outline btn-sm" style="margin-top:14px;width:100%;" onclick="showToast('Your album is under review at our studio.');">
+          <i class="fa-solid fa-magnifying-glass"></i> View Proof
+        </button>
+      </div>
+
+      <div class="tile">
+        <i class="fa-solid fa-certificate"></i>
+        <div class="num">100%</div>
+        <div class="label">Print Copyright License</div>
+        <button type="button" class="btn btn-outline btn-sm" style="margin-top:14px;width:100%;" onclick="showToast('Downloading Print Release License PDF...');">
+          <i class="fa-solid fa-file-pdf"></i> Download PDF
+        </button>
+      </div>
+    </div>
+
+    <!-- Gallery Sample Previews -->
+    <h3 style="margin:46px 0 20px;"><i class="fa-solid fa-images gold" style="margin-right:8px;"></i> Gallery Highlights Preview</h3>
+    <div class="grid grid-3 home-portfolio-grid">
+      <div class="media-item" data-category="wedding" data-title="Sindoor Daan Sacred Ritual" data-location="Hotel Maurya, Patna">
+        <div class="img-frame"><img src="images/portfolio-wedding-2.jpg" alt="Wedding photo 1" loading="lazy"></div>
+        <span class="tag">High-Res Approved</span>
+        <div class="item-overlay"><div class="item-title">Sindoor Daan Sacred Ritual</div></div>
+        <div class="item-zoom-icon"><i class="fa-solid fa-expand"></i></div>
+      </div>
+
+      <div class="media-item" data-category="wedding" data-title="Royal Bridal Portrait" data-location="Hotel Maurya, Patna">
+        <div class="img-frame"><img src="images/portfolio-wedding-1.jpg" alt="Wedding photo 2" loading="lazy"></div>
+        <span class="tag">High-Res Approved</span>
+        <div class="item-overlay"><div class="item-title">Royal Bridal Portrait</div></div>
+        <div class="item-zoom-icon"><i class="fa-solid fa-expand"></i></div>
+      </div>
+
+      <div class="media-item" data-category="wedding" data-title="Varmala Garland Exchange" data-location="Hotel Maurya, Patna">
+        <div class="img-frame"><img src="images/portfolio-wedding-3.jpg" alt="Wedding photo 3" loading="lazy"></div>
+        <span class="tag">High-Res Approved</span>
+        <div class="item-overlay"><div class="item-title">Varmala Garland Exchange</div></div>
+        <div class="item-zoom-icon"><i class="fa-solid fa-expand"></i></div>
+      </div>
+    </div>
+
+  </div>
+</main>
+
+<!-- ============ MOBILE BOTTOM BAR ============ -->
+<nav class="bottom-nav">
+  <a href="dashboard.html" class="active"><i class="fa-solid fa-house"></i>Dashboard</a>
+  <a href="#" data-mock-download="Photos"><i class="fa-solid fa-images"></i>Photos</a>
+  <a href="#" data-mock-download="Films"><i class="fa-solid fa-clapperboard"></i>Films</a>
+  <a href="https://wa.me/917209898221"><i class="fa-brands fa-whatsapp"></i>Help</a>
+</nav>
+
+<script src="js/script.js"></script>
+</body>
+</html>
+

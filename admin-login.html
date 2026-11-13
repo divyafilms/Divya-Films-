@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Admin Login — Divya Films | Studio Management Portal</title>
+<meta name="description" content="Divya Films studio staff and administrator login to manage bookings, clients, payments, and gallery deliverables.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+<!-- ============ HEADER & NAVIGATION (ROYAL GOLD DESIGN) ============ -->
+<header class="navbar luxury-navbar">
+  <div class="navbar-flare"></div>
+  <div class="navbar-container">
+    
+    <!-- Left Wing Accent -->
+    <div class="nav-wing nav-wing-left"></div>
+
+    <!-- Brand Logo Section -->
+    <a href="index.html" class="nav-brand">
+      <div class="brand-emblem-wrap">
+        <img src="images/logo-emblem.png" alt="Divya Films Royal Crown Logo" class="brand-emblem-img">
+      </div>
+      <div class="brand-divider"></div>
+      <div class="brand-meta">
+        <span class="brand-title">Divya Films</span>
+        <span class="brand-subtitle">PHOTOGRAPHY &amp; CINEMATOGRAPHY</span>
+        <span class="brand-tagline">LUXURY &bull; EMOTIONS &bull; FOREVER</span>
+      </div>
+    </a>
+
+    <!-- Center Nav Links with Vertical Icon + Label -->
+    <nav class="luxury-nav-menu">
+      <a href="index.html" class="luxury-nav-item" data-nav-link>
+        <i class="fa-solid fa-house"></i>
+        <span>Home</span>
+      </a>
+      <a href="about.html" class="luxury-nav-item" data-nav-link>
+        <i class="fa-regular fa-user"></i>
+        <span>About</span>
+      </a>
+      <a href="services.html" class="luxury-nav-item" data-nav-link>
+        <i class="fa-solid fa-gear"></i>
+        <span>Services</span>
+      </a>
+      <a href="portfolio.html" class="luxury-nav-item" data-nav-link>
+        <i class="fa-regular fa-image"></i>
+        <span>Portfolio</span>
+      </a>
+      <a href="packages.html" class="luxury-nav-item" data-nav-link>
+        <i class="fa-regular fa-circle-play"></i>
+        <span>Packages</span>
+      </a>
+      <a href="albums.html" class="luxury-nav-item" data-nav-link>
+        <i class="fa-solid fa-film"></i>
+        <span>Albums</span>
+      </a>
+      <a href="reviews.html" class="luxury-nav-item" data-nav-link>
+        <i class="fa-regular fa-star"></i>
+        <span>Reviews</span>
+      </a>
+      <a href="blog.html" class="luxury-nav-item" data-nav-link>
+        <i class="fa-regular fa-file-lines"></i>
+        <span>Blog</span>
+      </a>
+      <a href="contact.html" class="luxury-nav-item" data-nav-link>
+        <i class="fa-regular fa-envelope"></i>
+        <span>Contact</span>
+      </a>
+      <a href="films.html" class="luxury-nav-item" data-nav-link>
+        <i class="fa-regular fa-images"></i>
+        <span>Gallery</span>
+      </a>
+    </nav>
+
+    <!-- Right Side (Mini Top Bar + Action Buttons) -->
+    <div class="nav-action-zone">
+      <!-- Upper Strip: Phone + Social Icons -->
+      <div class="nav-mini-strip">
+        <a href="https://wa.me/917209898221" target="_blank" rel="noopener" class="strip-phone">
+          <i class="fa-brands fa-whatsapp"></i>
+          <span>7209898221</span>
+        </a>
+        <span class="strip-pipe">|</span>
+        <div class="strip-socials">
+          <a href="https://www.instagram.com/divya_films_1/" target="_blank" rel="noopener" title="Instagram @divya_films_1"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://wa.me/917209898221" target="_blank" rel="noopener" title="WhatsApp Us"><i class="fa-brands fa-whatsapp"></i></a>
+          <a href="mailto:divyafilmsmirganj@gmail.com" title="Email Us"><i class="fa-regular fa-envelope"></i></a>
+          <a href="index.html" title="Official Website"><i class="fa-solid fa-globe"></i></a>
+        </div>
+      </div>
+
+      <!-- Lower Row: Client Gallery + Book Date Pill -->
+      <div class="nav-action-row">
+        <div class="nav-action-divider"></div>
+        <a href="login.html" class="nav-client-link" title="Client Gallery Portal">
+          <i class="fa-solid fa-users"></i>
+          <span class="client-label">Client<br>Gallery</span>
+        </a>
+        <a href="index.html" class="nav-pill-btn">
+          <i class="fa-solid fa-house"></i>
+          <span>Back to Site</span>
+        </a>
+        <button class="hamburger luxury-hamburger" data-open-drawer aria-label="Open mobile menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Right Wing Accent -->
+    <div class="nav-wing nav-wing-right"></div>
+
+  </div>
+</header>
+
+<!-- ============ MOBILE DRAWER ============ -->
+<div class="drawer-overlay" data-close-drawer></div>
+<aside class="mobile-drawer">
+  <div class="drawer-top">
+    <span class="logo">
+      <span class="logo-mark"><img src="images/logo-emblem.png" alt="Logo" style="width:36px;height:36px;border-radius:50%;"></span>
+      <span class="logo-text"><strong>Divya Films</strong><span>Navigation</span></span>
+    </span>
+    <button class="drawer-close" data-close-drawer aria-label="Close menu"><i class="fa-solid fa-xmark"></i></button>
+  </div>
+  <nav class="drawer-links">
+    <a href="index.html"><i class="fa-solid fa-house"></i> Home <i class="fa-solid fa-chevron-right"></i></a>
+    <a href="about.html"><i class="fa-regular fa-user"></i> About Studio <i class="fa-solid fa-chevron-right"></i></a>
+    <a href="services.html"><i class="fa-solid fa-gear"></i> Our Services <i class="fa-solid fa-chevron-right"></i></a>
+    <a href="portfolio.html"><i class="fa-regular fa-image"></i> Photo Portfolio <i class="fa-solid fa-chevron-right"></i></a>
+    <a href="packages.html"><i class="fa-regular fa-circle-play"></i> Wedding Packages <i class="fa-solid fa-chevron-right"></i></a>
+    <a href="films.html"><i class="fa-regular fa-images"></i> Cinema &amp; Gallery <i class="fa-solid fa-chevron-right"></i></a>
+    <a href="albums.html"><i class="fa-solid fa-film"></i> Luxury Albums <i class="fa-solid fa-chevron-right"></i></a>
+    <a href="reviews.html"><i class="fa-regular fa-star"></i> Client Reviews <i class="fa-solid fa-chevron-right"></i></a>
+    <a href="blog.html"><i class="fa-regular fa-file-lines"></i> Wedding Journal <i class="fa-solid fa-chevron-right"></i></a>
+    <a href="contact.html"><i class="fa-regular fa-envelope"></i> Contact Us <i class="fa-solid fa-chevron-right"></i></a>
+    <a href="login.html" class="gold"><i class="fa-solid fa-users"></i> Client Gallery <i class="fa-solid fa-arrow-right"></i></a>
+    <a href="admin-login.html" class="gold"><i class="fa-solid fa-shield-halved"></i> Studio Admin <i class="fa-solid fa-arrow-right"></i></a>
+  </nav>
+  <a href="booking.html" class="btn btn-gold btn-block drawer-cta"><i class="fa-regular fa-calendar-check"></i> Check Date Availability</a>
+</aside>
+
+<!-- ============ ADMIN AUTH SECTION ============ -->
+<section class="auth-wrap">
+  <div class="auth-card">
+    <div class="logo" style="justify-content:center;margin-bottom:20px;">
+      <span class="logo-mark" style="width:54px;height:54px;font-size:1.5rem;"><i class="fa-solid fa-user-shield"></i></span>
+    </div>
+    <h2>Studio Master Admin Panel</h2>
+    <p class="sub">Sign in to control bookings, add clients, set client passwords, and manage private 4K galleries</p>
+
+    <div id="adminLoginError" style="display:none;background:rgba(239,68,68,0.15);border:1px solid #ef4444;color:#fca5a5;padding:12px;border-radius:var(--radius-s);font-size:0.86rem;margin-bottom:18px;text-align:center;">
+      <i class="fa-solid fa-triangle-exclamation" style="margin-right:6px;"></i> <span id="adminLoginErrorText">Galat password! Kripya sahi admin password dalein.</span>
+    </div>
+
+    <form id="adminLoginForm">
+      <div class="form-group">
+        <label for="a-user">Admin Username</label>
+        <input type="text" id="a-user" value="admin" placeholder="e.g. admin or aditya" required>
+      </div>
+
+      <div class="form-group">
+        <label for="a-pw">Master Password</label>
+        <div class="pw-wrap">
+          <input type="password" id="a-pw" placeholder="Enter master password" required>
+          <button type="button" data-toggle-pw="a-pw" aria-label="Toggle password visibility">
+            <i class="fa-regular fa-eye"></i>
+          </button>
+        </div>
+      </div>
+
+      <button type="submit" class="btn btn-gold btn-block" style="margin-top:10px;">
+        <i class="fa-solid fa-shield-halved"></i> Sign In to Studio Admin
+      </button>
+    </form>
+
+    <div style="background:var(--bg-soft);border:1px solid var(--border);border-radius:var(--radius-s);padding:14px;margin-top:24px;text-align:center;font-size:0.82rem;">
+      <span class="gold"><i class="fa-solid fa-key"></i> Official Master Admin Access:</span>
+      <div style="margin-top:4px;color:var(--ink-muted);">User: <code>admin</code> &nbsp;|&nbsp; Pass: <code>divyafilms8210596248</code></div>
+    </div>
+
+    <p class="auth-foot"><a href="login.html">Looking for Client Gallery Login instead?</a></p>
+    <p class="auth-foot"><a href="index.html">Return to Public Homepage</a></p>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-bottom" style="border:none;padding-top:0;">
+      <span>© 2026 Divya Films Studio Administration.</span>
+      <em>Capture Your Best Moments</em>
+      <a href="index.html" class="gold">DivyaFilms.com</a>
+    </div>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
+
